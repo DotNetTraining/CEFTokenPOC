@@ -24,7 +24,7 @@ namespace WindowsFormsApp1
             Browser = new ChromiumWebBrowser("http://localhost:3000");
             Browser.Dock = DockStyle.Fill;
             Browser.IsBrowserInitializedChanged += Browser_IsBrowserInitializedChanged;
-            Browser.LoadingStateChanged += Browser_LoadingStateChanged;
+            //Browser.LoadingStateChanged += Browser_LoadingStateChanged;
             this.Controls.Add(Browser);
             //SessionStore.Instance.SetValue("JWT", token);
         }
@@ -40,8 +40,8 @@ namespace WindowsFormsApp1
         {
             if (Browser.IsBrowserInitialized)
             {
-                Console.WriteLine("Browser Initialized");
-                Console.WriteLine($"Setting JWT: {_token}");
+                //Console.WriteLine("Browser Initialized");
+                //Console.WriteLine($"Setting JWT: {_token}");
                 //Browser.ShowDevTools();
 
                
